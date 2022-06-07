@@ -1,0 +1,343 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'PT Serif', serif;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: rgb(218, 194, 184);
+    --gray-color: rgb(225, 225, 225);
+    --hover-color: rgb(255, 0, 0);
+    --view-color: rgb(231, 135, 94);
+    --hover2-color: rgb(133, 49, 14);
+}
+body {
+    background-color: var(--main-color);
+    overflow-x: hidden;
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px 15px 10px;
+    text-align: center;
+    background-color: var(--gray-color);
+    
+}
+.logo {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 40px;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 15px;
+}
+nav i {
+    font-size: 20px;
+}
+nav i:hover {
+    transition: .4s;
+    color: var(--hover-color);
+    transform: scale(1.2);
+}
+.searchbar button {
+    padding: 5px 75px 5px 5px;
+    border: none;
+    font-size: 20px;
+    color: gray;
+    margin-right: 10px;
+}
+.navbar {
+    background-color: var(--gray-color);
+    border-top: 2px solid rgb(220, 220, 220);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 15px;
+    text-align: center;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+}
+.navbar a {
+    text-decoration: none;
+    font-size: 25px;
+    padding: 0px 30px;
+    text-transform: uppercase;
+    color: #000;
+}
+.navbar a:after {
+    content: '';
+    width: 0%;
+    display: block;
+    height: 2.5px;
+    margin: auto;
+    background-color: var(--hover-color);
+    transition: .4s;
+}
+.navbar a:hover::after {
+    width: 70%;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-30%);
+    z-index: 2;
+}
+.content h3 {
+    font-size: 30px;
+    font-weight: normal;
+    padding-bottom: 25px;
+}
+.content h1 {
+    font-size: 55px;
+    padding-bottom: 20px;
+}
+.content p {
+    font-size: 25px;
+    max-width: 950px;
+}
+.btn input {
+    margin-top: 40px;
+    padding: 10px 40px;
+    font-size: 25px;
+    font-weight: 510;
+    text-transform: capitalize;
+    border: 3px solid var(--hover-color);
+    border-radius: 30px;
+    background-color: transparent;
+    transition: .4s;
+}
+.btn input:hover {
+    color: white;
+    background-color: var(--hover-color);
+}
+.main-img {
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    right: 30px;
+    bottom: 0;
+}
+.main-img img {
+    position: absolute;
+    height: 100%;
+    right: -10%;
+    transform: translateX(10%);
+    z-index: 1;
+}
+.event {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin: 7% 8%;
+}
+.content-col h3 {
+    font-size: 33px;
+    font-weight: 550;
+    padding-bottom: 20px;
+}
+.content-col p {
+    font-size: 22px;
+    max-width: 1000px;
+}
+.content-row img {
+    width: 400px;
+    height: auto;
+    max-width: 100%;
+}
+.content-col img{
+    width: 400px;
+    height: auto;
+    max-width: 100%;
+}
+.content-col {
+    margin: 10% 0;
+}
+.boot {
+    width: 100%;
+    height: 100vh;
+    margin-top: 15%;
+}
+.boot h3 {
+    text-align: center;
+    font-size: 33px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    margin: 5% 8%;
+}
+.boot-content p {
+    font-size: 22px;
+}
+.boot-content img {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+}
+.boot-content img:hover {
+    transition: .4s;
+    transform: translate(1px, 1px);
+    transform: scale(1.2);
+}
+.boot-content {
+    padding-left: 10px;
+}
+.boot-btn {
+    text-align: center;
+}
+.boot-btn input {
+    padding: 10px 35px;
+    border: unset;
+    background-color: var(--view-color);
+    transition: .4s;
+    font-size: 25px;
+    color: white;
+}
+.boot-btn input:hover {
+    background-color: var(--hover2-color);
+    transform: scale(1.2);
+    transition: .4s;
+}
+
+.contact {
+    width: 100%;
+    height: 100vh;
+}
+.latter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10% 8%;
+
+}
+.latter ul li i:hover {
+    transition: .4s;
+    color: var(--hover-color);
+    transform: scale(1.2);
+}
+.contact ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 30px;
+    padding: 20px 50px;
+}
+.newslatter {
+    text-align: center;
+
+}
+.newslatter h3 {
+    font-size: 33px;
+}
+.newslatter p {
+    font-size: 25px;
+    padding-top: 20px;
+}
+.btn-latter input {
+    margin-top: 40px;
+    padding: 10px 10px;
+    font-size: 25px;
+    font-weight: 510;
+    text-transform: capitalize;
+    border: 3px solid var(--hover-color);
+    border-radius: 30px;
+    background-color: transparent;
+    transition: .4s;
+}
+.btn-latter input:hover {
+    color: white;
+    background-color: var(--hover-color);
+}
+footer {
+    text-align: center;
+    margin-top: 10%;
+}
+footer p {
+    font-size: 15px;
+    color: gray;
+}
+footer span {
+    font-style: italic;
+}
+
+
+@media (max-width: 600px) {
+    .navbar a, .nav ul li, .content, .content p {
+        font-size: 20px;
+    }
+    .main-img img {
+        display: none;
+    }
+    .logo {
+        font-size: 30px;
+    }
+    .searchbar button {
+        font-size: 15px;
+    }
+    .herp nav {
+        font-size: 10px;
+    }
+    .content h3 {
+        font-size: 25px;
+    }
+    .content h1 {
+        font-size: 45px;
+    }
+
+    .event {
+        grid-template-columns: 1fr;
+    }
+    .content-row img {
+        width: 380px;
+    }
+    .content-col img {
+        width: 380px;
+        padding-bottom: 40px;
+    }
+    .col-text p {
+        font-size: 20px;
+        max-width: 380px;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        transition: .5s;
+    }
+    .boot-content img {
+        width: 300px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        left: 15%;
+    }
+    .boot-content p {
+        text-align: center;
+    }
+    .trendy {
+        position: relative;
+        left: 15%;
+        display: inline-block;
+        top: 30%;
+    }
+    .beanie-img img {
+        width: 350px;
+    }
+    .contact {
+        position: relative;
+        margin-top: 80%;
+    }
+    .latter {
+        text-align: center;
+    }
+    .latter ul li {
+        font-size: 23px;
+    } 
+}
